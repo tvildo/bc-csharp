@@ -79,6 +79,8 @@ namespace Org.BouncyCastle.Cms
         internal bool _useDerForCerts = false;
         internal bool _useDerForCrls = false;
 
+        internal ISigner _signerProvider;
+
         protected readonly SecureRandom m_random;
 
         protected CmsSignedGenerator()
